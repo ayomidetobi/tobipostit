@@ -1,0 +1,29 @@
+@media  (max-width: 768px) {
+.natpo-size{
+    width: 450px;
+    
+}
+.pop{
+    width: 180px;
+}
+.mol-size{
+    width: 450px;
+   
+}
+.w-35.w-sm{
+    width: 100% !important;
+}
+
+}
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .natpo-size{
+        width: 400px;
+    }
+    .pop{
+        width: 190px;
+    }
+    
+    
+}

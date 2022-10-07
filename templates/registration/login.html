@@ -1,0 +1,95 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+{% load socialaccount %}
+{% block title%}
+login
+{% endblock title%}
+
+
+
+<body class="bg-light" onload="myFunction()">
+            {% block body%}
+    <div class="spinner-border text-info" role="status" id="loade">
+    
+    </div>
+    <section style="display:none;" id="myDiv">
+                
+        <div class="container w-35 mx-auto d-block text-center m-t-60 bg-white p-t-40 w-sm rounded border" >
+
+                    <p class="f-s-35 f-w-700"> Welcome back to post<span class="mycolor">it</span></p>
+                    <p class="f-s-16">
+                    Enter your username and password to SignIn
+                </p>
+                
+            <form method="POST"  class="mx-auto d-block in-style">
+                <div class="">
+                    {% csrf_token %}
+                    {{form|crispy}}
+                    {% comment %} <input type="text"for="username" class="form-control in-style mx-auto d-block  border-top-0 border-left-0 border-right-0 " id="username" placeholder="" name="username" required>
+                    <input type="password" for="password" class="form-control in-style mx-auto d-block m-t-30 border-top-0 border-left-0 border-right-0 " id="password" placeholder=""  name"password"required>  {% endcomment %}
+    
+                </div>
+                <p class="f-s-16 m-t-1o text-end"> <a href="{% url 'password_reset' %}"><span class="mycolor">forgot password?</span></a></p> 
+                <div class="m-t-30">
+                    <button class="btn my-btncolor in-style" type="submit"> continue</button>
+                    
+                        <style>
+    
+                            .asteriskField{
+                            visibility: hidden;
+                            
+                            }
+                            label.requiredField{
+                                margin-top:10px;
+                                
+                            }
+                            small{
+                                
+                                display:none;
+                            }
+                            span{
+                                padding-top:30px;
+                            }
+                            </style>
+                            
+                    <div class="row in-style mx-auto m-t-20 ">
+                        <div class="col-5 border-bottom  hi-10 ">
+                            
+                        </div>
+                        <div class="col-2 p-t-10">
+                        <p class="p-t-8">or</p>   
+                        </div>
+                        <div class="col-5 border-bottom hi-10">
+                        
+                        </div>
+                    </div>
+                    {% comment %} <a href="{% provider_login_url 'github' %}" class="btn border in-style m-t-15"> <img src="img/go.png" alt=""> continue with Github</a> {% endcomment %}
+                    <a href="{% provider_login_url 'google' %}" class="btn border in-style m-t-25"><img src="https://img.icons8.com/color/344/google-logo.png" alt="" width="20px">  continue with Google</a>
+                    <p class="f-s-16 m-t-30 p-b-40">No account? <a href="{% url 'signup' %}"><span class="mycolor">Sign Up</span></a></p>   
+                </div>
+                </div>
+            </form>
+              
+    </section>
+    <script>
+                var myVar;
+                
+                function myFunction() {
+                myVar = setTimeout(showPage, 1000);
+                }
+                
+                function showPage() {
+                document.getElementById("loade").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+                }
+    </script>
+    <style>
+                #loade{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 500;
+                }
+    </style>
+            {% endblock body%}
+</body>

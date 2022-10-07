@@ -1,0 +1,21 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: [tobipostit] Password Reset E-mail
+From: webmaster@localhost
+To: ayomidestobsy10@gmail.com
+Date: Thu, 29 Sep 2022 10:41:34 -0000
+Message-ID: <166444809413.18688.13392938025868223818@DESKTOP-O7GD8GQ>
+
+Hello from tobipostit!
+
+You're receiving this e-mail because you or someone else has requested a password for your user account.
+It can be safely ignored if you did not request a password reset. Click the link below to reset your password.
+
+http://localhost:8000/accounts/password/reset/key/1-bcigha-ddc2db518970c7ca3bf8ce043558014b/
+
+In case you forgot, your username is stobsy.
+
+Thank you for using tobipostit!
+localhost:8000
+-------------------------------------------------------------------------------

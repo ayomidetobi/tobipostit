@@ -1,0 +1,366 @@
+    {% extends 'base.html' %}
+    {% block title%}
+    index page
+    {% endblock title %}
+    {% block body%}
+    <!-- begin navbar -->
+    <nav class="navbar navbar-expand-lg nav-bg nav-height   " >
+        <div class="container">
+            <a href="index.html" class="text-decoration-none f-s-40 f-w-800 nav-brand"> <p class="text-gray"style="color:#292929;">post<span class="mycolor">it</span></p></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger  hamburger--vortex border">
+                <div class="hamburger-box">
+                <div class="hamburger-inner navbar-toggler-icon"></div>
+                </div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 f-s-24 px-2 ">
+            <li class="nav-item ">
+                <a class="nav-link active nav-color  p-r-30" aria-current="page" href="{% url 'story'%}">Story</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link nav-color  p-r-30" href="">Contact</a>
+            </li>
+
+            <li class="nav-item ">
+                <!-- <a class="nav-link nav-color p-r-30" href="login.html">Sign In</a> -->
+                <a class="nav-link nav-color p-r-30" href="{% url 'login'%}">Sign In</a>
+            
+            </li>
+            <!-- Button trigger modal -->
+        
+    
+    
+            </ul> 
+            <form class="d-flex" role="search">
+            
+                <a href="{% url 'signup'%}"class=" btn border-0 my-btncolor f-s-24 btn-size "   >Get Started</a>
+            </form>
+        
+        </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- begin hero -->
+    <div class="container-fliud ">
+        <div class="bg-img">
+            <div class="container p-b-180">
+                <div class="row p-t-133">
+                    <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-right">
+                        <p class="f-s-110 f-w-700 lh-me ">Stay Curious.</p>
+                        <p class="f-s-30">
+                            Lorem ipsum dolor sit ameetur adipiscing elit. Coctetur
+                            egestas massa velit aliquam. Molestim bibendum <br>
+                            hnt ipsum orci, platea aliquam id ut. 
+                            <div class="input-group mb-3 in-size m-t-50">
+                                <input type="text" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <button class="btn my-btncolor btn-size" type="button" id="button-addon2">Get Started</button>
+                            </div>
+
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-0">
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- end hero -->
+    <!-- begin lifestyle -->
+    <div class="container-fluid bg-contain m-t-68">
+
+            <div class="container   b-con">
+                <div class="row gx-3 p-t-15" data-aos="fade-right">
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                <div class="p-3 ">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="img/life.png" alt="" width="146px" height="96px">
+                        </div>
+                        <div class="col">
+                            <label for="lifestyle" class="life text-center ">Life style</label>
+                            <p class="f-s-20 m-t-20">The 20 Biggest Fashion Companies In Nigeria 2022</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <div class="p-3 ">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/nat.png" alt="" width="146px" height="96px">
+                            </div>
+                            <div class="col">
+                                <label for="lifestyle" class="nat text-center ">Nature</label>
+                                <p class="f-s-20 m-t-20">The 20 Biggest Fashion Companies In Nigeria 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <div class="p-3 ">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/tech.png" alt="" width="146px" height="96px">
+                            </div>
+                            <div class="col">
+                                <label for="lifestyle" class="tech text-center ">Technology</label>
+                                <p class="f-s-20 m-t-20">The 20 Biggest Fashion Companies In Nigeria 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end lifestyle -->
+    <!-- begin trend -->
+    <div class="container m-t-90 ">
+        <p class="f-s-40 f-w-700">Trending Stories</p>
+    
+            <div class="container ">
+                <div class="row gx-3">
+                <div class="col-lg-5  col-sm-12 col-md-12 m-t-20" data-aos="fade-up" >
+                <div class="p-3 bg-imgnat p-30">
+                    <label for="nature"class="nat text-center "> nature</label>
+                    <div class="m-t-330">
+                        <img src="img/nam.png" alt="" width="31px" height="31px">
+                        <span class="text-light f-s-14 p-l-10">Maria Davies</span>
+                        <p class="f-s-26 text-white p-t-20">
+                            The 20 Biggest Agro <br> Companies In Nigeria <br> 2022
+        
+                        </p>
+                        <p class="grey-text f-s-20">May 21, 2022</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-7 col-sm-12 col-md-12 m-t-20">
+                
+                    <div class=" ">
+                        <div class="row gy-4">
+                        <div class="col-12" data-aos="fade-left">
+                            <div class="p-3 bg-life p-30">
+                                <label for="nature"class="life text-center ">Life Style</label>
+                                <div class="m-t-60">
+                                    <img src="img/nam.png" alt="" width="31px" height="31px">
+                                    <span class="text-light f-s-14 p-l-10">Maria Davies</span>
+                                    <p class="f-s-20 text-white p-t-20">
+                                        The 20 Biggest Agro  Companies <br> In Nigeria 2022
+                    
+                                    </p>
+                                    <p class="grey-text f-s-20">May 21, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6" data-aos="fade-up">
+                            <div class="p-3 bg-tech p-30">
+                                <label for="nature"class="tech text-center ">Technology</label>
+                                <div class="m-t-58">
+                                    <img src="img/nam.png" alt="" width="31px" height="31px">
+                                    <span class="text-light f-s-14 p-l-10">Maria Davies</span>
+                                    <p class="f-s-16 text-white p-t-20">
+                                        The 20 Biggest Agro  Companies <br> In Nigeria 2022
+                    
+                                    </p>
+                                    <p class="grey-text f-s-20">May 21, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 "data-aos="fade-up" data-aos-delay="200">
+                            <div class="p-3 bg-tech p-30">
+                                <label for="nature"class="sport text-center ">sport</label>
+                                <div class="m-t-58">
+                                    <img src="img/nam.png" alt="" width="31px" height="31px">
+                                    <span class="text-light f-s-14 p-l-10">Maria Davies</span>
+                                    <p class="f-s-16 text-white p-t-20">
+                                        The 20 Biggest Agro  Companies <br> In Nigeria 2022
+                    
+                                    </p>
+                                    <p class="grey-text f-s-20">May 21, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+    </div>
+    <!-- endtrend -->
+    <!-- begins popular -->
+    <div class="container p-t-100">
+        <p class="f-s-40 f-w-700">Popular Stories</p>
+        <div class="container px-4 ">
+            <div class="row gx-4">
+                <div class="col-lg-6 col-sm-12 col-md-12 " data-aos="fade-right">
+                <div class="">
+                    <img src="img/natpo.png" alt="" width="auto" height="auto" class="natpo-size" />
+                    <label for="nature" class="nat text-center m-t-40">nature</label>
+                    <p class="f-s-26 f-w-600 m-t-30" >
+                        The 20 Biggest Agro Companies In Nigeria 2022
+                    </p>
+                    <img src="img/nam.png" alt="" width="26px" height="26px">
+                    <span class="f-s-14 p-l-10"><span class="gray-text">By</span> Maria Davies 
+                    <span class="gray-text">-May 21,2021</span></span>
+                    <p class="gray-text f-s-18 p-t-25">
+                        Lorem ipsum dolor sit amet, consectetur adipisgsque vel,
+                        metus auam adipiscing massa. Nec ornare leo consequat,
+                        sociis. Tellus nisl, porttitor eniilisi vel.
+                        Velit ornare eget sit condimentum ultricies diam. Ultrices leudin commodo
+                        et. Commodo eu, vedefrstibulum tincidunt ametum vel, arcu.
+                        <a href="#" class="ren">Read More...</a>
+                    </p>
+                </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-12 ">
+                    <div class="row " data-aos="fade-left">
+                        <div class="col-7 ">
+                            <label for="tech" class="tech text-center">Technology</label>
+                        <p class="f-s-20 p-t-10">
+                            The 20 Biggest Fintech Companies In Nigeria 2022
+                        </p>
+                        <img src="img/nam.png" alt="" width="26px" height="26px">
+                        <span class="f-s-14 p-l-10"><span class="gray-text">By</span> Maria Davies 
+                        <span class="gray-text">-May 21,2021</span></span>
+                        </div>
+                        <div class="col-5">
+                            <img src="img/Rectangle 9 (1).png" alt="" class="pop"width="212px" height="123px">
+                        
+                        </div>
+                        <p class="gray-text f-s-18">
+                            Lorem ipsum dolor sit amet, consectetur adipisgsque vel,
+                            metus auam adipisjjcing massa. Nec ornare leo consequat, sociis...
+                        </p>
+                    </div>
+                </div>
+                </div>
+                {% for post in posts%}
+                    <div class="row">
+                    {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row m-t-20" data-aos="fade-left" data-aos-delay="300">
+                            <div class="col-7 ">
+                                <label for="tech" class="life text-center">Life Style</label>
+                            <p class="f-s-20 p-t-10">
+                                {{post.title}}
+                            </p> 
+                            <img src="img/nam.png" alt="" width="26px" height="26px">
+                            <span class="f-s-14 p-l-10"><span class="gray-text">By</span> {{post.user}} 
+                            <span class="gray-text">-{{post.created_date}}</span></span>
+                            </div>
+                            <div class="col-5">
+                                <img src="img/Rectangle 9 (1).png" alt="" class="pop"width="212px" height="123px">
+                            
+                            </div>
+                            <p class="gray-text f-s-18">
+                                {{post.text|slice:":200"}} <a href="{% url 'article_view' post.id%} " class="ren">Read More...</a>
+                            </p>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    {% else  %}
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="row m-t-20" data-aos="fade-left" data-aos-delay="300">
+                            <div class="col-7 ">
+                                <label for="tech" class="life text-center">Life Style</label>
+                            <p class="f-s-20 p-t-10">
+                                {{post.title}}
+                            </p> 
+                            <img src="img/nam.png" alt="" width="26px" height="26px">
+                            <span class="f-s-14 p-l-10"><span class="gray-text">By</span> {{post.user}} 
+                            <span class="gray-text">-{{post.created_date}}</span></span>
+                            </div>
+                            <div class="col-5">
+                                <img src="img/Rectangle 9 (1).png" alt="" class="pop"width="212px" height="123px">
+                            
+                            </div>
+                            <p class="gray-text f-s-18">
+                                {{post.text|slice:":200"}} <a href="{% url 'article_view' post.id%} " class="ren">Read More...</a>
+                            </p>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor%}
+        </div>
+    </div>
+    <!-- end popular -->
+    <!-- begin post -->
+    <div class="container bg-post text-center " data-aos="zoom-in-down" data-aos-delay="200">
+        <p class=" p-t-50 f-s-26 f-w-700">Try Post<span class="mycolor">it</span>.</p>
+        <p class="f-s-26 ">Do you want to write or discover stories from writers on any topic?</p>
+        <div class="input-group mb-3 in-size m-t-45 mx-auto p-b-100">
+            <input type="text" class="form-control come" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn my-btncolor btn-size" type="button" id="button-addon2">Get Started</button>
+        </div>
+    </div>
+    <!-- end post -->
+    <!-- begin footer -->
+    <footer class=" container-fluid bg-foot m-t-50 text-white">
+        <div class="container p-b-20">
+            <div class="row gx-3">
+                <div class="col-lg-4 col-sm-12 col-md-6">
+                    <p class="  f-s-20 f-w-700 p-t-30">Try Post<span class="mycolor">it</span>.</p>
+                    <p class="f-s-18 w-80">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Tincidunt id sem vel quis in turpis sit eget pellentesque. Nunc etiicies in rhoncus,
+                        rhoncus in arcu. Tincidunt neque fusce vitaenisi aliquet. 
+                        que maeae tortoere necsem commodo ac.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6">
+                    <p class="f-s-20 f-w-700 p-t-30">Quick menu</p>
+                <div class="row">
+                    <div class="col-6">
+                        <ul style="list-style-type:none;" type="">
+                            <li>Home</li>
+                            <li>Stories</li>
+                            <li>Treding Stories</li>
+                            <li>Popular Stories</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul style="list-style-type:none;" type="">
+                            <li>Home</li>
+                            <li>Stories</li>
+                            <li>Treding Stories</li>
+                            <li>Popular Stories</li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                    
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6">
+                    <p class="f-s-20 f-w-700 p-t-30">Subcribe to our newsletter</p>
+                    <div class="input-group mb-3  m-t-30 mx-auto p-b-100">
+                        <input type="text" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn my-btncolor btn-size" type="button" id="button-addon2">Subcribe</button>
+                    </input>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <hr >
+            <ul class="nav col-md-12 justify-content-end list-unstyled d-flex">
+                <li> <a href="#" class="lit">Terms and Policy</a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><img src="img/twitter.png" alt="" width="18px" height="14px" /></a></li> </a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><img src="img/facebook.png" alt="" width="8px" height="14px"></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><img src="img/insta.png" alt="" width="14px" height="14px"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    {% endblock body%}

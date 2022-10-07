@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on http://localhost:8000
+From: webmaster@localhost
+To: ayomidestobsy10@gmail.com
+Date: Tue, 27 Sep 2022 14:14:40 -0000
+Message-ID: <166428808039.4568.9661971095114806434@DESKTOP-O7GD8GQ>
+
+
+You're receiving this email because you requested a password reset for your user account at http://localhost:8000.
+
+Please go to the following page and choose a new password:
+
+http://http://localhost:8000/reset/MQ/bcf10g-0c939a6e0dd1d186dfc542c65aa146d2/
+
+Your username, in case you’ve forgotten: stobsy
+
+Thanks for using our site!
+
+The http://localhost:8000 team
+
+
+
+-------------------------------------------------------------------------------

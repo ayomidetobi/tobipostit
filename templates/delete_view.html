@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+{% block title%}
+login
+{% endblock title%}
+{% block body%}
+<body class="bg-light">
+    {% if user.is_authenticated %}
+    <div class="container w-35 mx-auto d-block text-center m-t-60 bg-white p-t-60 w-sm rounded border p-b-80" >
+
+        <p class="f-s-35 f-w-700"> Check your Email</p>
+        <p class="f-s-16">
+            {% comment %} {% if form.is_valid%} {% endcomment %}
+            Click the link we sent to {{form.email}} <br> to complete your account set-up.
+            {% comment %} {% endif%} {% endcomment %}
+    </p>
+    
+<form method="POST"  class="mx-auto d-block in-style">
+    <div class="">
+        {% csrf_token %}
+        
+    </div>
+    
+        <button class="btn my-btncolor in-style" type="submit">Delete</button>
+        <a class="btn btn-outline-info in-style" type="submit" href="{% url 'profile'%}"> Take me back</a>
+        {% else %}
+        <a class="btn btn-outline-info in-style" type="submit" href="{% url 'login'%}"> Go to login</a>
+        {% endif %}
+            <style>
+
+                .asteriskField{
+                visibility: hidden;
+                
+                }
+                label.requiredField{
+                    margin-top:10px;
+                    
+                }
+                small{
+                    
+                    display:none;
+                }
+                span{
+                    padding-top:30px;
+                }
+                </style>
+        
+        
+    </div>
+    </div>
+</form>
+</body>
+{% endblock body%}

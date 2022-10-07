@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% load socialaccount %}
+{% load crispy_forms_tags %}
+{% block title%}
+login
+{% endblock title%}
+{% block body%}
+<body class="bg-light">
+    <div class="container w-100 mx-auto d-block text-center m-t-60 bg-white p-t-40 w-sm rounded border p-b-40" data-aos=>
+
+        <p class="f-s-35 f-w-700"> Edit your post<span class="mycolor">it</span> Profile</p>
+        
+    
+
+    <div class="">
+        <form method="POST" class="mx-auto d-block justify-content-center col-md-6 text-start" validate>
+        {% csrf_token %}
+            {{form|crispy}}
+            {{form1|crispy}}
+            <button class="btn my-btncolor in-style w-100 m-t-30" type="submit"> save changes</button>
+            </div>
+            <p class="f-s-20 m-t-20 ">you can change your password using this <a href="{% url 'password_change' %}"><span class="mycolor">Form</span></a></p>   
+        </div>
+        
+    </div>
+    <div class="m-t-30">
+        
+    </div>
+    </div>
+</form>
+<style>
+
+    .asteriskField{
+    visibility: hidden;
+    
+    }
+    label.requiredField{
+        margin-top:5px;
+        
+    }
+    small{
+        
+        display:none;
+    }
+    span{
+        padding-top:30px;
+    }
+    </style>
+</body>
+{% endblock body%}

@@ -1,0 +1,69 @@
+{% extends 'base1.html'%}
+{% load socialaccount %}
+{% block title%}
+login
+{% endblock title%}
+{% block body%}
+<body class="bg-light">
+    <div class="container w-35 mx-auto d-block text-center m-t-60 bg-white p-t-40 w-sm rounded border" data-aos=>
+
+        <p class="f-s-35 f-w-700"> Welcome back to post<span class="mycolor">it</span></p>
+        <p class="f-s-16">
+        Enter your username and password to SignIn
+    </p>
+    <label for="email" class="f-s-16">Email Address</label>
+<form method="GET">
+    <div class="mx-auto d-block">
+        {% csrf_token %}
+        <input type="text"for="username" class="form-control in-style mx-auto d-block  border-top-0 border-left-0 border-right-0 " id="username" placeholder="" name="username" required>
+        <input type="password" for="password" class="form-control in-style mx-auto d-block m-t-30 border-top-0 border-left-0 border-right-0 " id="password" placeholder=""  name"password"required> 
+
+    </div>
+    <div class="m-t-30">
+        <button class="btn my-btncolor in-style" type="submit"> continue</button>
+        <!-- Button trigger modal -->
+            
+            <!-- Modal -->
+            {% comment %} <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center m-t-40 bg-white  w-sm  p-b-80" >
+
+                        <p class="f-s-35 f-w-700"> Check your Email</p>
+                        <p class="f-s-16">
+                            Click the link we sent to youremailaddress@gmail.com <br> to complete your account set-up.
+                    </p>
+                    
+                   
+                    <div class="m-t-30">
+                        <a href="admin.html"><button class="btn my-btncolor in-style" type="submit"> continue</button></a>
+                      
+                    </div>
+                </div>
+                    
+                </div>
+                </div>
+            </div> {% endcomment %}
+        <div class="row in-style mx-auto m-t-20 ">
+            <div class="col-5 border-bottom  hi-10 ">
+                
+            </div>
+            <div class="col-2 p-t-10">
+            <p class="p-t-8">or</p>   
+            </div>
+            <div class="col-5 border-bottom hi-10">
+            
+            </div>
+        </div>
+        {% comment %} <a href="{% provider_login_url 'github' %}" class="btn border in-style m-t-15"> <img src="img/go.png" alt=""> continue with Github</a> {% endcomment %}
+        <a href="{% provider_login_url 'google' %}" class="btn border in-style m-t-25"><img src="https://img.icons8.com/color/344/google-logo.png" alt="" width="20px">  continue with Google</a>
+        <p class="f-s-16 m-t-30 p-b-40">No account? <a href="{% url 'signup' %}"><span class="mycolor">Sign Up</span></a></p>   
+    </div>
+    </div>
+</form>
+</body>
+{% endblock body%}

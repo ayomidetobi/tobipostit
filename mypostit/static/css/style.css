@@ -1,0 +1,329 @@
+body{
+    font-family: 'Harmattan';
+    color: black;
+
+}
+.nav-height{
+    height: 92px;
+    
+}
+.font-harm{
+    font-family: 'Harmattan';
+}
+.nav-bg{
+    background-color:  #FDFEFF;;
+}
+.nav-color{
+    color:  #292929;
+    ;
+}
+.my-btncolor{
+    background-color: #0086B0;
+    color: #FFFBFB;
+}
+a.my-btncolo:active,a.my-btncolo:hover{
+    background-color: #0086B0 !important;
+    color: #FFFBFB !important;
+}
+.sto-img{
+    background-image: url(../img/nat42.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.m-t-250{
+    margin-top: 250px;
+}
+.btn-size{
+    width: 132px;
+   
+}
+.hi-2{
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.nav-link.active{
+    color: #0086B0;
+}
+.m-l{
+    margin-left: 800px;
+}
+.justi{
+    justify-items: right !important;
+}
+.bg-img{
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.f-s-110{
+    font-size: 110px;
+}
+.lh-me{
+    line-height: 100px;
+}
+.in-size{
+    width: 496px;
+    height: 39px;
+}
+.p-b-180{
+    padding-bottom: 180px;
+}
+.bg-contain{
+    background-color:  #FDFEFF;
+}
+.b-con{
+    border: 0.5px solid #BBBBBB;
+    border-radius:3px ;
+}
+.life{
+    background-color: #E5BF5E;
+    border-radius: 5px;
+    width: 89px;
+    height: 24px;
+    color: #FDFEFF;
+    
+}
+.nat{
+    background-color: #41D750;
+    border-radius: 5px;
+    width: 89px;
+    height: 24px;
+    color: #FDFEFF;
+    
+}
+.tech{
+    background-color:  #6397E5;
+    border-radius: 5px;
+    width: 89px;
+    height: 24px;
+    color: #FDFEFF;
+    
+}
+.sport{
+    background-color:  #F42A2A;
+    border-radius: 5px;
+    width: 89px;
+    height: 24px;
+    color: #FDFEFF;
+    
+}
+a.ren{
+   color: #F42A2A;
+   text-decoration: none;
+}
+.grey-text{
+    color: #BBBBBB;
+}
+.gray-text{
+    color: #9A9A9A;
+}
+.m-t-330{
+    margin-top: 330px;
+}
+.bg-imgnat{
+    background: linear-gradient(0deg, rgba(41, 41, 41, 0.52), rgba(41, 41, 41, 0.52)), url(../img/natsto.png);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-life{
+    background: linear-gradient(0deg, rgba(41, 41, 41, 0.52), rgba(41, 41, 41, 0.52)), url(../img/lifesto.png);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.bg-tech{
+    background: linear-gradient(0deg, rgba(41, 41, 41, 0.65), rgba(41, 41, 41, 0.65)), url(../img/techsto.png);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.bg-post{
+    background: linear-gradient(0deg, rgba(229, 229, 229, 0.6), rgba(229, 229, 229, 0.6)), url(../img/pst.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mycolor{
+    color: #0086B0;
+}
+.bg-foot{
+    background-color: #292929;
+}
+a.lit{
+    text-decoration: none;
+    color: #FDFEFF;
+}
+.rounded-me{
+    border-radius: 20px;
+}
+.mol{
+    background: rgba(240, 240, 240, 0.94);
+}
+.wi-25{
+    width: 14px !important;
+    height: 14px !important;
+}
+.mol-size{
+    width: 650px !important;
+}
+.in-style{
+    width: 320px;
+    
+  
+}
+.hi-10{
+    height: 30px;
+}
+.bg-me{
+    background-color:  #F5F6F8;
+}
+.sid-bg{
+    background-color: #292929;
+}
+.post{
+    background-color: #F0F8FF;
+    border-radius: 2px;
+}
+.copy{
+    color: #757575;
+}
+.sid-wth{
+    width: 140px;
+}
+.my-btn{
+    background-color:#0086B0;
+    border-radius: 5px;
+}
+.txt-ff{
+    color: #ffffff;
+}
+.rh{
+    width: 1400px;
+}
+.n{
+    height: 300px;
+}
+.bg-admin{
+    background-color:  #F0F8FF;
+}
+.svg-col{
+    color: #BBBBBB;
+}
+.svg-col:link,.svg-col:visited{
+    color: grey;
+}
+.svg-col:hover,.svg-col:active,.svg-col:focus{
+    color: #0086b0 !important; ;
+}
+.fixed-left{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+  /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 3; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  
+  overflow-x: hidden; /* Disable horizontal scroll */
+  
+}
+.fixed-right{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+  /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  
+  overflow-x: hidden; /* Disable horizontal scroll */
+  
+}
+.scrollarea {
+    overflow-y: auto;
+  }
+.z-1{
+    z-index: 2;
+}
+.z-0{
+    z-index: 1;
+}
+.profile-bg{
+    background-color: #F0F8FF;
+}
+.mybtnn{
+    border: 2px solid  #0086B0;
+    border-radius: 3px;
+
+   
+}
+.mybtnnn{
+    border: 2px solid  #0086B0;
+    border-radius: 6px !important;
+}
+
+.btN{
+    background-color: 
+    #292929;
+    color: #ffff;
+}
+.myimg-size{
+    width: 240px;
+    height: auto;
+}
+
+.sto{
+    border-radius: 3px;
+    background-color: #0086B0;
+    color: #ffffff;
+}
+.Bio_{
+    color: 
+    #757575;
+    background-color: 
+    #E3EBED;
+    width: 340px;
+    height: 100px; 
+    background-color: #757575; 
+    
+}
+.inp{
+    
+    background-color: #E3EBED; 
+    border-radius: 3px;
+}
+.mytab-me{
+    background-color: #F0F8FF;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.nav-link.mytab-me{
+    color: #757575 ;
+}
+.nav-link.mytab-me:active,.nav-link.mytab-me:focus{
+    color: black !important;
+    font-weight: 900;
+    background-color: #F0F8FF;
+}
+.bg-input{
+    background: url(../img/eye.svg) no-repeat ;
+    background-position: 10px 7px;
+    background-size: 20px;
+    
+}
+.bg-input-edit{
+    background: url(../img/edit.png) no-repeat ;
+    background-position: 10px 7px;
+    background-size: 20px;
+    
+}
+small.form-text.textmute{
+    visibility: hidden !important;
+}
+small{
+    visibility: hidden !important;
+}
+
