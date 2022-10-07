@@ -176,25 +176,15 @@ SOCIALACCOUNT_PROVIDERS = {
 #         # (``socialaccount`` app) containing the required client
 #         # credentials, or list them here:
         'APP': {
-            'client_id': '185495233718-294a7s4i8dosf9op66ccesv831hpp5ld.apps.googleusercontent.com',
-            'secret': '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',
+            'client_id': '*********************************',
+            'secret': '*****************',
             'key': ''
         }
     }
     
 }
 
-# SOCIALACCOUNT_PROVIDERS = {
-#      'twitter': {
-# #         # For each OAuth based provider, either add a ``SocialApp``
-# #         # (``socialaccount`` app) containing the required client
-# #         # credentials, or list them here:
-#          'APP': {
-#              'client_id': 'cChZNFj6T5R0TigYB9yd1w',
-#              'secret': 'NPcudxy0yU5T3tBzho7iCotZ3cnetKwcTIRlX0iwRl0',
-#              'key': ''
-#          }
-#      }
+
     
 #  }
 # SOCIAL_AUTH_GITHUB_KEY = 'ea3a22adaefd444bea19'
