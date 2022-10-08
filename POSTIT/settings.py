@@ -157,41 +157,13 @@ AUTHENTICATION_BACKENDS = (
             'allauth.account.auth_backends.AuthenticationBackend',
         )
 
-# SOCIALACCOUNT_PROVIDERS = {
-#     'github': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-#         'APP': {
-#             'client_id': '************',
-#             'secret': '********************',
-#             'key': ''
-#         }
-#     }
-# }
 
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-        'APP': {
-            'client_id': '*********************************',
-            'secret': '*****************',
-            'key': ''
-        }
-    }
-    
-}
+
+
 
 
     
-#  }
-# SOCIAL_AUTH_GITHUB_KEY = 'ea3a22adaefd444bea19'
-# SOCIAL_AUTH_GITHUB_SECRET = '4c6311ac92a2f13a2715418a2b382d739751ec28'
 
-# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '185495233718-294a7s4i8dosf9op66ccesv831hpp5ld.apps.googleusercontent.com'
-# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 # ACCOUNT_AUTHENTICATION_METHOD = 'email'
 # ACCOUNT_EMAIL_REQUIRED = True
 # ACCOUNT_UNIQUE_EMAIL = True
