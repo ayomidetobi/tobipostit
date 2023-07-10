@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # 'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.twitter',
     'allauth.socialaccount.providers.google', 
     'crispy_forms',
+    "crispy_bootstrap5",
     'mypostit',
 ]
 
@@ -86,7 +88,9 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 LOGIN_REDIRECT_URL = 'profile'
 ACCOUNT_LOGOUT_ON_GET = True
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 WSGI_APPLICATION = 'POSTIT.wsgi.application'
 
@@ -211,4 +215,15 @@ EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
 
 
-
+JAZZMIN_SETTINGS = {
+    'show_ui_builder': True,
+}
+JAZZMIN_UI_TWEAKS = {
+    "dark_mode_theme": "darkly",
+    "theme": "materia",
+    
+    "accent": "accent-fuchsia",
+    "navbar": "navbar-pink navbar-dark",
+    "sidebar": "sidebar-light-fuchsia",
+    #  "sidebar": "sidebar-dark-fuchsia",
+}

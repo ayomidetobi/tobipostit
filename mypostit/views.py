@@ -18,10 +18,11 @@ from django.core.mail import send_mail
 # Create your views here.
 class indexView(TemplateView):
     template_name = 'index.html'
-    def get_context(self, **kwargs):
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["posts"] = Post.objects.all().order_by('-id')
         return context
+    
 
 
 def profile( request):
