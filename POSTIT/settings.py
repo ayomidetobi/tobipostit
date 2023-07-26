@@ -22,7 +22,7 @@ BASE_DIR = BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!kr)wf!)@a%r*jufxsmf6!b+rg5*74es+q4^i5!#e=*k!c@gia'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -161,51 +161,13 @@ AUTHENTICATION_BACKENDS = (
             'allauth.account.auth_backends.AuthenticationBackend',
         )
 
-# SOCIALACCOUNT_PROVIDERS = {
-#     'github': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-#         'APP': {
-#             'client_id': 'ea3a22adaefd444bea19',
-#             'secret': '4c6311ac92a2f13a2715418a2b382d739751ec28',
-#             'key': ''
-#         }
-#     }
-# }
 
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-        'APP': {
-            'client_id': '185495233718-294a7s4i8dosf9op66ccesv831hpp5ld.apps.googleusercontent.com',
-            'secret': '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',
-            'key': ''
-        }
-    }
+
+
+
+
     
-}
 
-# SOCIALACCOUNT_PROVIDERS = {
-#      'twitter': {
-# #         # For each OAuth based provider, either add a ``SocialApp``
-# #         # (``socialaccount`` app) containing the required client
-# #         # credentials, or list them here:
-#          'APP': {
-#              'client_id': 'cChZNFj6T5R0TigYB9yd1w',
-#              'secret': 'NPcudxy0yU5T3tBzho7iCotZ3cnetKwcTIRlX0iwRl0',
-#              'key': ''
-#          }
-#      }
-    
-#  }
-# SOCIAL_AUTH_GITHUB_KEY = 'ea3a22adaefd444bea19'
-# SOCIAL_AUTH_GITHUB_SECRET = '4c6311ac92a2f13a2715418a2b382d739751ec28'
-
-# SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '185495233718-294a7s4i8dosf9op66ccesv831hpp5ld.apps.googleusercontent.com'
-# SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 # ACCOUNT_AUTHENTICATION_METHOD = 'email'
 # ACCOUNT_EMAIL_REQUIRED = True
 # ACCOUNT_UNIQUE_EMAIL = True
