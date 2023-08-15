@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
     'social_django.middleware.SocialAuthExceptionMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -124,9 +124,9 @@ DJOSER = {
 }
 }
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:5173','http://localhost:4173','http://localhost:3000', 'http://localhost:4200','http://127.0.0.1:5173'
-]
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:5173','http://localhost:4173','http://localhost:3000', 'http://localhost:4200','http://127.0.0.1:5173'
+# ]
 
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.google.GoogleOAuth2',
